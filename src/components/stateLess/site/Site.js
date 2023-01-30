@@ -1,15 +1,15 @@
 import React from "react";
 import Admin from "../admin/Admin";
 import Home from "../../stateFull/home/Home";
-import { BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 export default function Site(){
     return(
-        <BrowserRouter>
         <div>
-            <Home/>
-            <Admin/> 
+            <Routes>
+                <Route path="/home" element={<Home/>}/>
+                <Route path="/admin" element={<Admin/>}/>
+            </Routes>
         </div>
-        </BrowserRouter>
     )
 };

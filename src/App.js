@@ -4,10 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Site/>
-    </div>
-  );
-}
+    <BrowserRouter>
+      <div className="App">
+        <Site/>
+      </div>
+    </BrowserRouter>
+  )
+};
 
 export default App;
